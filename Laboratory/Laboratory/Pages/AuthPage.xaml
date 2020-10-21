@@ -1,0 +1,26 @@
+﻿<Page x:Class="Laboratory.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Laboratory.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthPage">
+
+    <Grid>
+        <StackPanel Style="{StaticResource MainStackPanel}">
+            <TextBlock Style="{StaticResource MainText}">Authorization</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Style="{StaticResource SecondaryText}">Login</TextBlock>
+                <TextBox Name="LoginTBox" Width="140" Height="25" Margin="35 5 5 5"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Style="{StaticResource SecondaryText}">Password</TextBlock>
+                <PasswordBox Name="PasswordPB" Width="140" Height="25" Margin="5"></PasswordBox>
+            </StackPanel>
+            <Button Style="{StaticResource MainButton}" Name="AuthBtn" Width="130" Height="40" Click="AuthBtn_Click">Log in</Button>
+        </StackPanel>
+            
+    </Grid>
+</Page>
